@@ -1,0 +1,78 @@
+
+.item1 { grid-area: Name; }
+.item2 { grid-area: Contact;
+  border-right: 5px solid palevioletred; }
+.item3 { grid-area: Skills;
+  border-right: 5px solid palevioletred; }
+.item4 { grid-area: Language; }
+.item5 { grid-area: Education; }
+.item6 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+grid-template-areas:
+    'Name Name Name Name Name  '
+    'Contact Education Education Education Education '
+    'Skills Language Language Language Language '
+    'footer footer footer footer footer ';
+  gap: 20 px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 50px 0;
+
+}
+
+
+h1{
+  font-family:courier;
+  color: darkolivegreen;
+}
+
+
+
+li{
+  list-style:none ;
+  text-align: center;
+}
+
+.center {  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+
+  p {
+    color:rgb(9, 36, 21);
+    font-family:courier;
+  }
+
+  li{
+    font-family:courier;
+  }
+
+  #back{
+    color:rgb(3, 21, 126);
+    text-align:center;
+  } 
+
+  a:hover {
+    color: hotpink;
+  }
+
+  li.intro::first-letter {
+    color: #120368;
+  } 
+
+  ::marker { 
+    color: rgb(23, 24, 87);
+  }
+
+  ::selection {
+    color: rgb(255, 251, 0);
+    background: rgb(5, 5, 5);
+  }
